@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Julia Wrobel
+% 13 August 2018
+% 
+% this file contains macros and some formatting for use with beamer presentations.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   set up the beamer template 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% set fonts
+\linespread{1.1} 
+%\usefonttheme{serif}
+%\usepackage{palatino}
+%\usepackage{textpos}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+%\setbeamerfont{title}{shape=\scshape}
+%\setbeamerfont{title like}{shape=\scshape}
+%\setbeamerfont{frametitle}{shape=\scshape}
+
+
+% beamer appearance cheat sheet: http://www.cpt.univ-mrs.fr/~masson/latex/Beamer-appearance-cheat-sheet.pdf
+
+% define colors
+\definecolor{CCblue}{HTML}{0078bf}  % primary color
+\definecolor{CCblack}{HTML}{4b4b45} % color for author and columbia 
+\definecolor{CCgreen}{HTML}{00843d}
+
+
+% set colors
+\setbeamercolor{palette primary}{fg=CCblue}
+\setbeamercolor{palette secondary}{fg=CCblue}
+\setbeamercolor{palette tertiary}{fg=CCblue}
+\setbeamercolor{palette quaternary}{fg=CCblue}
+
+\setbeamercolor{structure}{fg=CCblue}
+\setbeamercolor{normal text}{fg=CCblue}
+\setbeamercolor{section in toc}{fg=CCblue}
+
+\setbeamercolor{itemize/enumerate body}{fg=CCblue}
+
+\setbeamercolor{itemize subitem}{fg=CCblue}
+\setbeamercolor{enumerate subitem}{fg=CCblue}
+\setbeamercolor{itemize/enumerate subbody}{fg=CCblue}
+\setbeamercolor{author}{fg=CCgreen}
+\setbeamercolor{math text}{fg=CCgreen}
+
+
+\setbeamercolor{date}{fg=CCblack}
+\setbeamercolor{section in head/foot}{fg=CCblack}
+
+
+% set title alignment
+\setbeamertemplate{title page}[default]
+[right]{}
+
+
+% change bullet styles
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}[dash]
+
+
+
+
+
+% set footer
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{
+  \begin{beamercolorbox} {section in head/foot} 
+\vskip1pt ~
+  \hspace{2mm}
+  \includegraphics[width=.25\textwidth]{./figs/CC_c}
+  ~\vskip5pt
+  \end{beamercolorbox}
+}
+
+\newcommand{\myitem}{\item[\tiny$\blacksquare$]}
+
+% font
+\renewcommand{\familydefault}{\sfdefault}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
